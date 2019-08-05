@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-RUN apk add --no-cache libc6-compat
+# RUN apk add --no-cache libc6-compat
 RUN mkdir /app
 WORKDIR /app
 ADD consignment-service /app/consignment-service

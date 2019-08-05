@@ -1,5 +1,5 @@
 build:
-	protoc -I. --go_out=plugins=grpc:$(GOPATH)/src/github.com/oentoro/consignment-service/proto/consignment/consignment.proto
+	protoc -I. --go_out=plugins=grpc:/home/vagrant/code/consignment-service/proto/consignment/consignment.proto
 	go build
 	docker build -t oentoro .
 run:

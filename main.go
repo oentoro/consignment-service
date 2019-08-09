@@ -91,7 +91,7 @@ func main() {
 
 	// Set-up micro instance
 	srv := micro.NewService(
-		micro.Name("service.consignment"),
+		micro.Name("consignment.service"),
 	)
 
 	srv.Init()
